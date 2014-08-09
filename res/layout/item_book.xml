@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/padding_left"
+    android:paddingTop="@dimen/padding_top_and_bottom"
+    android:paddingBottom="@dimen/padding_top_and_bottom" >
+
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="@dimen/cover_width"
+        android:layout_height="@dimen/cover_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="cover"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cover"
+        android:layout_marginLeft="@dimen/distance_from_cover"
+        android:text=""
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="@dimen/bookinfo_item_margin"
+        android:text=""
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/publisher_and_pubdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_below="@+id/author"
+        android:layout_marginTop="@dimen/bookinfo_item_margin"
+        android:text=""
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_below="@+id/publisher_and_pubdate"
+        android:layout_marginTop="@dimen/bookinfo_item_margin"
+        android:text=""
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
